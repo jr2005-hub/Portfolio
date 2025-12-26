@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com Jandui Junior - Designer Gráfico.">
+  <title>Contato</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .success-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .success-box {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      max-width: 400px;
+    }
+    .success-box h2 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+    .success-box p {
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+    .success-box button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .success-box button:hover {
+      background: #43a047;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Jandui Junior</a>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">Sobre</a></li>
+        <li><a href="skills.html" class="nav-link">Habilidades</a></li>
+        <li><a href="projects.html" class="nav-link">Serviços</a></li>
+        <li><a href="contact.html" class="nav-link active">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <div class="container">
+      <h1 class="page-title">Entre em <span class="gradient-text">contato</span></h1>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="contact-heading">Vamos criar juntos!</h2>
+          <p class="contact-text">
+            Estou sempre aberto a novos projetos e colaborações criativas. 
+            Envie sua mensagem e vamos conversar sobre suas ideias!
+          </p>
+
+          <div class="contact-cards">
+            <div class="info-card glass-card">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:janduijunio83@gmail.com">janduijunio83@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Telefone</h3>
+                <a href="tel:+5584999068521">+55 (84) 99906-8521</a>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Localização</h3>
+                <p>Alexandria RN, Brasil</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h3 class="social-title">Redes sociais</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/janduijr_" class="social-icon instagram" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/+5584999068521?text=Olá!%20Gostaria%20de%20um%20orçamento."
+                  target="_blank"
+                  class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glass-card">
+          <h2 class="form-title">Envie uma mensagem</h2>
+
+          <form
+            action="https://formsubmit.co/janduijunio83@gmail.com"
+            method="POST"
+            class="contact-form"
+          >
+          
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="📩 Nova mensagem do site">
+            <input type="hidden" name="_autoresponse"
+                  value="Recebi sua mensagem! Em breve entrarei em contato.">
+
+            <div class="form-group">
+              <label for="name">Nome completo</label>
+              <input
+                type="text"
+                id="name"
+                name="Nome"
+                required
+                class="form-input"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                required
+                class="form-input"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="Assunto"
+                required
+                class="form-input"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="Mensagem"
+                rows="5"
+                required
+                class="form-textarea"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar mensagem
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-box">
+      <h2>✅ Mensagem enviada!</h2>
+      <p>Obrigado por entrar em contato, irei responder em breve.</p>
+      <button onclick="closeSuccess()">Fechar</button>
+    </div>
+  </div>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2025 Jandui Junior. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
