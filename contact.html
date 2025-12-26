@@ -8,6 +8,51 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .success-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .success-box {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      max-width: 400px;
+    }
+    .success-box h2 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+    .success-box p {
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+    .success-box button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .success-box button:hover {
+      background: #43a047;
+    }
+  </style>
 </head>
 <body>
 
@@ -78,6 +123,7 @@
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
+
           </div>
         </div>
 
@@ -89,6 +135,7 @@
             method="POST"
             class="contact-form"
           >
+          
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="📩 Nova mensagem do site">
@@ -97,27 +144,52 @@
 
             <div class="form-group">
               <label for="name">Nome completo</label>
-              <input type="text" id="name" name="Nome" required class="form-input">
+              <input
+                type="text"
+                id="name"
+                name="Nome"
+                required
+                class="form-input"
+              >
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="Email" required class="form-input">
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                required
+                class="form-input"
+              >
             </div>
 
             <div class="form-group">
               <label for="subject">Assunto</label>
-              <input type="text" id="subject" name="Assunto" required class="form-input">
+              <input
+                type="text"
+                id="subject"
+                name="Assunto"
+                required
+                class="form-input"
+              >
             </div>
 
             <div class="form-group">
               <label for="message">Mensagem</label>
-              <textarea id="message" name="Mensagem" rows="5" required class="form-textarea"></textarea>
+              <textarea
+                id="message"
+                name="Mensagem"
+                rows="5"
+                required
+                class="form-textarea"
+              ></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary btn-full">
               <i class="fas fa-paper-plane"></i> Enviar mensagem
             </button>
+
           </form>
         </div>
       </div>
@@ -132,14 +204,14 @@
     </div>
   </div>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
 
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  </script>
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 
   <footer class="footer">
     <div class="container">
@@ -148,6 +220,3 @@
   </footer>
 </body>
 </html>
-
-
-
